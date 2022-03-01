@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwas - A FullStack Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="filec.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+    <script type="text/javascript" src="loading-bar.js"></script>
+
+</head>
+<body onload="myfunction()">
+  <script>
+    var src;
+    var i=0;
+    var urls = [
+    "https://i.pinimg.com/474x/de/52/b7/de52b7bd3fbd77d5ca765bb6c40b3eb0.jpg",
+    "./images/img2.jpg",
+    "./images/img1.jpg",
+    "./images/img3.jpg"
+      ];
+    function change() {
+      src = urls[i];
+      $(".img").attr("src",src);
+      i++;
+      if(i == urls.length){
+        i=0;
+      }
+    }
+    setInterval(() => { 
+        change();
+    }, 4000);
+
+  </script>
+    <div id="cont" >
+      <div class="divider" aria-hidden="true"></div>
+      <p class="loading-text" aria-label="Loading">
+        <span class="letter" aria-hidden="true">L</span>
+        <span class="letter" aria-hidden="true">o</span>
+        <span class="letter" aria-hidden="true">a</span>
+        <span class="letter" aria-hidden="true">d</span>
+        <span class="letter" aria-hidden="true">i</span>
+        <span class="letter" aria-hidden="true">n</span>
+        <span class="letter" aria-hidden="true">g</span>
+      </p>
+    </div>
+    <div id="mainbody">
+         
+      <!-- starting navbar -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid fadein" data-animation="fadein" data-delay=".5s" style="animation-delay: .5s;">
+              <a class="navbar-brand" href="#"><img width="180" height="100" src="./images/brand.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="home-nav"  aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="about-nav" href="#" >About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="skills-nav" href="#">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="projects-nav" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-nav" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <h5 class="hire" id="hire"><a style="text-decoration: none; color:white;" href="# "><i class="far fa-comment"></i>Hire</a></h5>
+            </div>
+          </nav>
+    
+        <!-- ending navbar -->
+
+          <!-- starting home  -->
+          <div class="home">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 left-text">
+                  <h1 data-animation="slide-in-right" class="slide-in-right" data-delay=".5s" style="animation-delay: .5s;">Hi, my name is <strong class="excl">Vishwas!</strong></h1>
+                  <h3 data-animation="slide-in-right" class="slide-in-right" data-delay=".5s" style="animation-delay: .5s;">I'm a <strong>Full-Stack Web Developer</strong> and<strong class="basic">
+                    <span class="flip"> Esports Player 🎮 .</span>
+                    <span class="flip"> Animal Lover 💞 .</span>   
+                    <span class="flip"> Traveller 🚶‍♂️ .</span>
+                    <span class="flip"> Streamer 💻 .</span>
+                    <span class="flip"> Sketcher 🎨 .</span>
+                    <span class="flip"> Illustrator 🖱 .</span>
+                    <span class="flip"> Photographer 📷 .</span>
+                  </strong></h3>
+                  <button class="left-text-btn slide-in-right" id="left-text-btn" data-animation="slide-in-right"  data-delay=".5s" style="animation-delay: .5s;"
+                  >EXPLORE <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 image-col">
+                  <div class="my-img slide-in-left" data-animation="slide-in-right"  data-delay=".5s" style="animation-delay: .5s;">
+                    <img class="img" src="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- starting 2-home -->
+              <div class="home2" id="about"> 
+                <div class="about" >
+                  <h2 class="about-title" id="about-title" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">ABOUT</h2>
+                  <h2 class="about-ques" id="about-ques" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">Who is Vishwas?</h2>
+                 <div class="about-content container">
+                   <div class="row">
+                     <div class="about-image col-lg-4 col-md-12 col-sm-12" id="about-image" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">
+                      <img class="abtimg" src="./images/img7.jpg">
+                    </div>
+                     <div id="about-text" class="about-text col-lg-8 col-md-12 col-sm-12" data-delay=".5s" style="animation-delay: 1.5s;" data-animation="fadein">
+                        <div class="home2-title">
+                            <h1>Web Development is basically my cup of tea ;)</h1>
+                        </div>
+                        <div class="about-para " id="about-para" >
+                          <p>
+                          I am a smart working and motivated full stack web developer.
+                          I am willing to gain professional knowledge in this field and
+                          i have a deep knowledge of web development. I basically work in <strong class="p-caps" style="color: black;">MERN</strong> stack 
+                          and made some projects out of it. Also i am a fast learner and w.r.t that i 
+                          advances towards new technologies. and as <a class="p-caps" style="color: black; text-decoration: none;" href="https://www.sarasoueidan.com/" target="_blank"><Strong> Sara Soueidan </Strong></a>
+                          said, <strong class="p-caps" style="color: black;">"</strong> Responsive Web Design always
+                          plays an important role whenever going to promote your website<strong class="p-caps" style="color: black;"> "</strong>, i agree with this.</p> 
+                          <p>I am pursuing <strong class="p-caps" style="color: black;">Btech in Mechanical and Automation Engineering from Maharaja Agarsen Institute of Technology</strong>,
+                            Also i have done a <strong class="p-caps" style="color: black;"></strong>Full Stack Web Development Course by Angela Yu from Udemy</strong> so with this i am doing internships and
+                          making some projects. I have a personal interest in startups so i'll be working on that sooner  </p>
+                          <p>I use to learn new tech and listen songs and explore new things that makes me amd my work better.
+                            My hobbies are pretty simple, I like to talk with people who are mature and have great experience and 
+                            i listen to songs and do coding and make new websites, I love Animals so i like to spend time with them.
+                            I am avaialable for freelance and interns, u can feel free to reach out and say Hello! I promise I don't bite 😉.
+                          </p>
+                          <button class="get-in-touch" id="get-in-touch">Get In Touch !</button>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+              </div>
+          <!-- ending 2-home -->
+
+
+
+          <!-- skills section -->
+              <section class="skills" id="skills">
+                <div cla  ss="shrink-wrap" id="shrink-wrap">
+                <h2 class="skills-title" id="skills-title" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">Skills</h2>
+                <h3 id="skills-posses" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">Skills I Possess</h3>
+                <p id="skills-known" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">These are the skills i use to promote your products:</p>
+                <a class="button-skills" id="button-skills" data-delay=".5s" style="animation-delay: 1s;" data-animation="fadein">Load Skills</a>
+                <div class="loading-skills" id="loading-skills">
+                  <div class="pencil">
+                    <div class="pencil__ball-point"></div>
+                    <div class="pencil__cap"></div>
+                    <div class="pencil__cap-base"></div>
+                    <div class="pencil__middle"></div>
+                    <div class="pencil__eraser"></div>
+                  </div>
+                  <div class="line"></div>
+                  <h2>Fetching skills...Please Wait</h2>
+                </div>
+                <div class="icons-container" id="icons-container">
+                  <div class="icon-space ">
+                    <i class="fab fa-html5" aria-hidden="true"></i>
+                    <p id="html">HTML5</p>
+                  </div>
+                  <div class="icon-space ">
+                    <i class="fab fa-css3"></i>
+                    <p id="css">CSS3</p>
+                  </div>
+                  <div class="icon-space">
+                    <i class="fab fa-js"></i>
+                    <p id="js">JAVASCRIPT</p>
+                  </div>
+                  <div class="icon-space">
+                    <i class="devsicon devicon-jquery-plain "></i>
+                    <p id="jq">JQUERY</p>
+                  </div>
+                  <div class="icon-space">
+                    <i class="fas fa-database"></i>
+                    <p id="mn">MONGODB</p>
+                  </div>
+                  <div class="icon-space">
+                    <i class="fab fa-node"></i>
+                    <p id="node">NODE JS</p>
+                  </div>
+                  <div class="icon-space">
+                    <i class="devsicon devicon-express-original"></i>
+                    <p id="exp">EXPRESS JS</p>
+                  </div>
+                  <div class="icon-space">
+                    <i class="fab fa-react"></i>
+                    <p id="react">REACT JS</p>
+                  </div>
+                  <div class="icon-space">
+                    <i class="fab fa-github"></i>
+                    <p id="gith">Github</p>
+                  </div>
+                  <div class="icon-space">
+                    <i class="fas fa-code-branch"></i>
+                    <p id="git">Git</p>
+                  </div>
+                  <div class="icon-space">
+                    <i class="fas fa-terminal"></i>
+                    <p id="hype">Hyper Terminal</p>
+                  </div>
+                  <div class="icon-space">
+                    <i class="devsicon devicon-vscode-plain"></i>
+                    <p id="vs">VS Code</p>
+                  </div>
+                  <div class="icon-space">
+                    <i class="devsicon devicon-subversion-original"></i>
+                    <p id="sub">Sublime</p>
+                  </div>
+                  <div class="icon-space">
+                    <img class="resp-img" src="./images/icon-tablet-phone-and-browser.svg" alt="icon of tablet, phone and browser window." aria-hidden="true">
+                    <p id="res">Responsive Websites</p>
+                  </div>
+                  </div>
+                <h2 class="skills-note" id="skills-note">In regular days i am improving my web dev skills, doing internships and making projects and learning JAVA.</h2>
+                <a id="cert" href="./images/cert.jpg">See My WEB DEV Certificate</a>
+                </div>
+              </section>
+
+
+          <!-- end of Skills section -->
+          
+          <!-- start of project -->
+          <section class="project" id="project">
+            <div class="project-wrap" id="project-wrap">
+              <h2 class="project-title" id="project-title" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">Projects</h2>
+              <h3 id="projecth3" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">Some projects you should see</h3>
+              <div class="project-container">
+                <div class="project1" id="project1" style=" padding-right: 10px; height: 400px;" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">
+                  <img src="./images/Screenshot 1.png" alt="" srcset="">
+                </div>
+                <div class="card-project1" id="card-project1" >
+                <div class="project1-txt" id="project1-txt">
+                  <h1>Watch Ecommerce Website</h1>
+                  <p>This project is a product based ecommerce website.
+                     You can do everything in this website which you can perform in a ecommerce website 
+                  </p>  
+                  <button><a href="https://vishwassaini25.github.io/WatchEcommercWebsite/" target="_blank">View Website</a></button>
+                  <button><a href="https://github.com/VishwasSaini25/WatchEcommercWebsite" target="_blank">View Github Repo</a></button>
+                </div>
+                </div>
+                <div class="project2" id="project2" style="  height: 400px;" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-left">
+                  <img src="./images/Screenshot 2.png" alt="" srcset="">
+                <div class="card-project2" id="card-project2">
+                  <div class="project2-txt2" id="project2-txt">
+                    <h1>Hotel Website</h1>
+                    <p>This project is basically a Hotel Website where you can see hotel rooms,
+                       customer reviews and book your own hotel room
+                    </p>  
+                    <button><a href="https://vishwassaini25.github.io/Hotel-Website/" target="_blank">View Website</a></button>
+                    <button><a href="https://github.com/VishwasSaini25/Hotel-Website" target="_blank">View Github Repo</a></button>
+                  </div>
+                  </div>
+                  </div>
+                <div class="project3" style=" padding-right: 10px; height: 400px;" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">
+                  <img src="./images/Screenshot 3.png" alt="" srcset="">
+                  <div class="card-project3" id="card-project3">
+                    <div class="project3-txt" id="project3-txt">
+                      <h1>Previous Portfolio</h1>
+                      <p>This project is basically a my previous portfolio
+                      </p>  
+                      <button><a href="https://vishwassaini25.github.io/Vishwas-Portfolio-/" target="_blank">View Website</a></button>
+                      <button><a href="https://github.com/VishwasSaini25/Vishwas-Portfolio-" target="_blank">View Github Repo</a></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="project4" style=" height: 400px;" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-left">
+                  <img src="./images/Screenshot 4.png" alt="" srcset="">
+                  <div class="card-project4" id="card-project4">
+                    <div class="project4-txt" id="project4-txt">
+                      <h1>Emoji App (working on)</h1>
+                      <p>This project is a dictionary of emoji where 
+                        yyou can see the meaning of every emoji.
+                      </p>  
+                      <button><a href="https://emoji-app-mu.vercel.app/" target="_blank">View Website</a></button>
+                      <button><a href="https://vercel.com/vishwassaini25/emoji-app" target="_blank">View Github Repo</a></button>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <p class="note" id="note">Note - I had made so many projects some are in my saved and currently i am working on a startup website.
+                All the projects shown are selected
+              </p>
+            </div>
+          </section>
+
+
+
+          <!-- end of project -->
+
+          <!-- start of contact -->
+          <section class="contact" id="contact">
+            <div class="contact-wrap" id="contact-wrap">
+              <h2 class="contact-title" id="contact-title" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">Contacts</h2>
+              <h3 id="contact-h3" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">Feel free to give me work :)</h3>
+              <p id="contact-p" data-delay=".5s" style="animation-delay: .5s;" data-animation="slide-in-right">Have any question regarding my work,want to get my resume,
+                want to know about how much i take for a project or even 
+                if come here for no reason just say good day 
+              </p>
+              <div class="contact-container">
+                <div class="form" id="form" data-delay=".5s" style="animation-delay: 1.5s;" data-animation="fadein">
+              <form action="https://formspree.io/f/xgedarvl" method="POST" >
+                <label class="email">
+                  Your email:<br>
+                  <input type="email" name="_replyto">
+                </label><br>
+                <label class="msg">
+                  Your message:<br>
+                  <textarea name="message"></textarea>
+                </label><br>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+              </form>
+            </div>
+              <div class="socials" id="socials" data-delay=".5s" style="animation-delay: 1.5s;" data-animation="fadein">
+                <h1>Get In Touch</h1>
+                <p>Ping in my socials</p>
+                <br>
+                <ul class="socials-list">
+                  <li><i class="fab fa-instagram"></i></li>
+                  <li><i class="fab fa-linkedin-in"></i></li>
+                  <li><i class="fab fa-github"></i></li>
+                  <li><i class="fab fa-facebook"></i></li>
+                </ul><br>
+                <button class="resume" onclick="location.href='./Vishwas-Saini.pdf'"> My Resume </button>
+              </div>
+            </div>
+            </div>
+          </section>
+          <!-- end of contact -->
+          <div class="credit">
+            <h5>© | Designed & coded with 💻 by Vishwas Saini</h5>
+          </div>
+      </div>
+      
+
+    <script src="filej.js"></script>
+</body>
+</html>
